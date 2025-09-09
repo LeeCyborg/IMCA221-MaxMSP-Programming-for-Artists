@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 117.0, 110.0, 1105.0, 480.0 ],
+		"rect" : [ 119.0, 107.0, 1105.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 885.0, 291.5, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "message",
@@ -243,8 +255,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 395.0, 370.0, 94.0, 47.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 395.0, 370.0, 96.0, 47.0 ],
 					"text" : "Use metro to randomly select a sample"
 				}
 
@@ -351,12 +362,13 @@
 								"filename" : "duduk.aif",
 								"filekind" : "audiofile",
 								"id" : "u475001493",
+								"selection" : [ 0.642105263157895, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1,
-									"speed" : 2.973657548125633,
+									"speed" : -3.886959038934723,
 									"timestretch" : 1,
-									"pitchshift" : 39.0
+									"pitchshift" : 0.110725141120278
 								}
 
 							}
@@ -365,13 +377,12 @@
 								"filename" : "brushes.aif",
 								"filekind" : "audiofile",
 								"id" : "u837001523",
-								"selection" : [ 0.726315789473684, 0.831578947368421 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1,
-									"speed" : 2.973657548125633,
+									"speed" : -3.886959038934723,
 									"timestretch" : 1,
-									"pitchshift" : 39.0
+									"pitchshift" : 0.110725141120278
 								}
 
 							}
@@ -392,8 +403,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 552.0, 433.0, 150.0, 52.0 ],
 					"pitchcorrection" : 0,
-					"pitchshift" : [ 39.0 ],
-					"pitchshiftcent" : [ 3986 ],
+					"pitchshift" : [ 0.110725141120278 ],
+					"pitchshiftcent" : [ -3810 ],
 					"quality" : "basic",
 					"timestretch" : [ 1 ]
 				}
@@ -518,20 +529,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 982.269524037837982, 65.957448184490204, 150.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "These are attributes They can be sent through message or using attrui objects. "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 773.04966151714325, 49.5, 150.0, 47.0 ],
-					"text" : "Check the help file for all MESSAGES that can be sent to Playlist"
 				}
 
 			}
@@ -543,7 +541,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 896.453919410705566, 111.911348819732666, 41.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "pause"
 				}
 
@@ -691,7 +688,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 351.0, 53.0, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "You can make a blank playlist or drag and drop files into it "
 				}
 
@@ -704,7 +700,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 356.0, 286.0, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Many audio files can be put in playlist"
 				}
 
@@ -717,7 +712,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 574.0, 168.0, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "You can use a gain or live.gain object to adjsut volume on different dacs"
 				}
 
@@ -996,7 +990,7 @@
 					"formantcorrection" : 0,
 					"id" : "obj-9",
 					"maxclass" : "playlist~",
-					"mode" : 0,
+					"mode" : "basic",
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"originallength" : [ 0 ],
@@ -1005,7 +999,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 145.0, 187.0, 150.0, 92.0 ],
 					"pitchcorrection" : 0,
-					"quality" : 0,
+					"quality" : "basic",
 					"timestretch" : [ 0 ]
 				}
 
@@ -1352,19 +1346,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "brushes.aif",
 				"bootpath" : "C74:/media/msp",

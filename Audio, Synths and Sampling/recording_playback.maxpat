@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 166.0, 87.0, 801.0, 554.0 ],
+		"rect" : [ 122.0, 87.0, 813.0, 554.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 899.0, 525.725659161806107, 135.0, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "The variables are accessed in order $1 $2 $3 and pu t into this message. We can view them in a message output. "
 				}
 
@@ -61,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 840.0, 390.725659161806107, 135.0, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "This example uses 3 variables, from a multislider object. \nThey need to be packed into a list. \nThey can be retrived "
 				}
 
@@ -75,7 +73,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 477.889536648988724, 474.509833335876465, 135.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "$1 indicates a variable, taking a number from the sldier"
 				}
 
@@ -160,7 +157,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 508.0, 308.725659161806107, 131.557788074016571, 47.0 ],
-					"presentation_linecount" : 4,
 					"text" : "- start time\n- end time\n- speed (miliseconds)"
 				}
 
@@ -173,8 +169,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 373.0, 255.725659161806107, 109.243690967559814, 47.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 373.0, 255.725659161806107, 112.0, 47.0 ],
 					"text" : "Start messages can play segments at specifc speeds"
 				}
 
@@ -188,7 +183,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 75.0, 511.0, 109.243690967559814, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Use gain slider to turn it on/off"
 				}
 
@@ -226,7 +220,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 98.0, 291.0, 109.243690967559814, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Toggle sends 0 or 1, you can send 0 or 1 message or toggle. "
 				}
 
@@ -240,7 +233,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 88.0, 401.0, 109.243690967559814, 47.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Play object needs to reference the buffer name"
 				}
 
@@ -278,8 +270,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.966367721557617, 46.082994401454926, 150.0, 60.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 315.966367721557617, 46.082994401454926, 153.0, 60.0 ],
 					"text" : "Recorded sounds need to be kept in buffers, which is a location on your computer "
 				}
 
@@ -293,7 +284,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 180.672258138656616, 89.075624942779541, 91.056910514831543, 74.0 ],
-					"presentation_linecount" : 5,
 					"text" : "You can connect the adc to dac and direclty output sound"
 				}
 
@@ -318,7 +308,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 803.0, 525.725659161806107, 89.18918913602829, 22.0 ],
-					"text" : "461 1608 348"
+					"text" : "425 1280 1185"
 				}
 
 			}
@@ -463,7 +453,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 373.0, 308.725659161806107, 110.0, 23.0 ],
-					"presentation_linecount" : 2,
 					"text" : "start 0 1000 1000",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -527,8 +516,20 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 303.0, 439.725659161806107, 143.965524792671204, 20.689656257629395 ]
+					"parameter_enable" : 1,
+					"patching_rect" : [ 303.0, 439.725659161806107, 143.965524792671204, 20.689656257629395 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "gain~",
+							"parameter_mmax" : 157.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "gain~",
+							"parameter_type" : 0
+						}
+
+					}
+,
+					"varname" : "gain~"
 				}
 
 			}
@@ -661,7 +662,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 526.050388813018799, 170.6123988032341, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Record argument should match buffer name "
 				}
 
@@ -675,7 +675,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 320.168048143386841, 112.605035305023193, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Buffer keeps mySound stored for 5000 miliseconds "
 				}
 
@@ -703,7 +702,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 530.252069234848022, 47.082994401454926, 76.884423851966858, 76.884423851966858 ]
+					"patching_rect" : [ 530.252069234848022, 37.640782475471497, 76.884423851966858, 76.884423851966858 ]
 				}
 
 			}
@@ -717,7 +716,7 @@
 					"offcolor" : [ 0.0, 1.0, 0.6, 1.0 ],
 					"oncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 674.789875745773315, 47.082994401454926, 12.0, 58.0 ]
+					"patching_rect" : [ 700.54948478937149, 53.846156477928162, 12.0, 58.0 ]
 				}
 
 			}
@@ -1149,7 +1148,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 650.62601375579834, 127.923028767108917, 539.752069234848022, 127.923028767108917 ],
+					"midpoints" : [ 650.62601375579834, 135.065886259078979, 539.752069234848022, 135.065886259078979 ],
 					"source" : [ "obj-24", 1 ]
 				}
 
@@ -1166,7 +1165,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"midpoints" : [ 624.62601375579834, 126.369009912014008, 667.51068240404129, 126.369009912014008, 667.51068240404129, 40.710717737674713, 680.789875745773315, 40.710717737674713 ],
+					"midpoints" : [ 624.62601375579834, 114.83054780960083, 667.51068240404129, 114.83054780960083, 667.51068240404129, 40.710717737674713, 706.54948478937149, 40.710717737674713 ],
 					"order" : 0,
 					"source" : [ "obj-24", 0 ]
 				}
@@ -1212,6 +1211,7 @@
  ],
 		"parameters" : 		{
 			"obj-147" : [ "toggle", "toggle", 0 ],
+			"obj-148" : [ "gain~", "gain~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -1222,19 +1222,6 @@
 			}
 ,
 			"inherited_shortname" : 1
-		}
-,
-		"parameter_map" : 		{
-			"key" : 			{
-				"toggle" : 				{
-					"srcname" : "0.modifiers.0.code.key",
-					"min" : 0.0,
-					"max" : 1.0,
-					"flags" : 1
-				}
-
-			}
-
 		}
 ,
 		"dependency_cache" : [  ],
