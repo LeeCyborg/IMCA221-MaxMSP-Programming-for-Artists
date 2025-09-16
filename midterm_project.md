@@ -1,11 +1,11 @@
 # Mid term project: Transform 
 ## Groups, 25% - Due October 21
 
-In this project you are invited to look beyond the computer screen and transform a space or atmosphere. Using primarily audio and video (and other if you want to) MaxMSP tools, bring us into a transformed within (or nearby) our classroom. This could mean changing the mood, forcuing us to change persepctives, or 
+In this project you are invited to look beyond the computer screen and transform a space or atmosphere. Using primarily audio and video (and other if you want to) MaxMSP tools, bring us into a transformed within (or nearby) our classroom. This could mean changing the mood, forcing us to change perspectives, or imagine something new. Your project should __not__ appear as a max patch, but as a piece for people to approach and engage with through a linear progression or interactive element. Your work should in some way have an arch or experience that builds or changes throughout the experience. 
 
-Be intentional. What do you want us to experience, and how are you bringing us there? Are there other elements 
+Be intentional. What do you want us to experience, and how are you bringing us there? 
 
-
+This work should feel complete - take note of where wires and cables are. Use projectors, lights, staging, curation etc to create a space. The work should be approaching gallery-ready state. Freel free to re-arrange any nearby space or reserve a critique room.  
 
 ## Grading Criteria:
 __25% Exploration & Functionality:__ 

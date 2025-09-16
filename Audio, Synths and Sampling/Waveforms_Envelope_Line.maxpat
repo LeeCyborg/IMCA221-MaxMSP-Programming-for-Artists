@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 160.0, 91.0, 578.0, 526.0 ],
+		"rect" : [ 159.0, 87.0, 908.0, 566.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,155 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-29",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 875.094283550977707, 8.391559720039368, 325.170064926147461, 50.0 ],
+					"presentation_linecount" : 9,
+					"style" : "helpfile_label",
+					"text" : "Line can be used to make a series of numbers between two points. Line~ is for signals. Parameters are start, end, and time. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 912.0, 178.333329081535339, 164.166662752628326, 52.49999874830246 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 875.094283550977707, 66.792448550462723, 59.0, 23.0 ],
+					"text" : "0.7 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 978.333310008049011, 151.375, 22.25, 22.25 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1073.0, 67.0, 47.0, 23.0 ],
+					"text" : "pause"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1031.320688635110855, 66.792448550462723, 36.0, 23.0 ],
+					"text" : "stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 942.264090567827225, 66.792448550462723, 66.0, 23.0 ],
+					"text" : "0, 1 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-19",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 912.0, 151.0, 56.0, 23.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "bang" ],
+					"patching_rect" : [ 912.0, 108.0, 36.0, 23.0 ],
+					"text" : "line~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 439.200006544589996, 582.400008678436279, 64.0, 22.0 ],
+					"text" : "peek~ test"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 20.0, 985.0, 115.0, 31.0 ],
+					"size" : 1000.0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-146",
 					"maxclass" : "gain~",
 					"multichannelvariant" : 0,
@@ -47,7 +196,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 908.0, 542.164015769958496, 93.0, 27.0 ]
+					"patching_rect" : [ 904.081624031066895, 541.496593475341797, 93.0, 27.0 ]
 				}
 
 			}
@@ -157,58 +306,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 27.083332300186157, 276.744176149368286, 179.0, 22.0 ],
 					"text" : "Try some waves"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 14.0,
-					"id" : "obj-124",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 297.916655302047729, 658.333308219909668, 179.0, 22.0 ],
-					"text" : "Rectangle Wave"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 14.0,
-					"id" : "obj-123",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 27.083332300186157, 658.333308219909668, 179.0, 22.0 ],
-					"text" : "Saw Wave"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 14.0,
-					"id" : "obj-122",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 291.666655540466309, 316.666654586791992, 179.0, 22.0 ],
-					"text" : "Triangle Wave"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 14.0,
-					"id" : "obj-121",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 27.083332300186157, 316.666654586791992, 179.0, 22.0 ],
-					"text" : "Sine Wave"
 				}
 
 			}
@@ -536,22 +633,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 561.445803880691528, 8.391559720039368, 177.0, 33.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 561.445803880691528, 8.391559720039368, 179.0, 33.0 ],
 					"text" : "Slider lets us chang ethe value. I set ie between 0 - 2000 hz"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-93",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 727.710870265960693, 46.945778012275696, 113.0, 74.0 ],
-					"presentation_linecount" : 5,
-					"text" : "Lets hook up our wave to a dac, with gain so we can turn it off when it gets annoying :) "
 				}
 
 			}
@@ -562,8 +645,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.705374330282211, 185.5, 181.0, 33.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 80.705374330282211, 185.5, 182.0, 33.0 ],
 					"text" : "Scope lets us see that as a plot. We can also output the number. "
 				}
 
@@ -577,7 +659,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 642.16869843006134, 140.921685099601746, 132.530125379562378, 16.867470502853394 ]
+					"patching_rect" : [ 642.16869843006134, 141.0, 132.530125379562378, 16.867470502853394 ]
 				}
 
 			}
@@ -612,8 +694,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.0, 131.0, 111.0, 87.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 492.0, 131.0, 113.0, 87.0 ],
 					"text" : "220 means the cycle goes 220 times per seconds, or 220 hz. Thats how sound is produced!"
 				}
 
@@ -664,7 +745,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 76.628937631845474, 96.5, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Signals are continous feeds of numbers. "
 				}
 
@@ -1023,7 +1103,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 40.209156401613924, 0.15728818655014, 0, 148.936170212765944, 1.0, 0, 228.723404255319139, 0.883333139419556, 0, 279.120072088343022, 0.213785359064738, 0, 510.638297872340445, 0.12, 0, 893.617021276595779, 0.136666472752889, 0, 973.404255319148888, 0.0, 0, 1000.0, 0.286677825450897, 0, 1000.0, 0.0, 0 ],
+					"addpoints" : [ 40.209156401613924, 0.15728818655014, 0, 148.936170212765944, 1.0, 0, 228.723404255319139, 0.883333139419556, 0, 279.120072088343022, 0.213785359064738, 0, 510.638297872340445, 0.12, 0, 893.617021276595779, 0.136666472752889, 0, 973.404255319148888, 0.0, 0, 981.717200038280907, 0.238078943093618, 0, 1000.0, 0.286677825450897, 0, 1000.0, 0.0, 0 ],
 					"classic_curve" : 1,
 					"id" : "obj-64",
 					"maxclass" : "function",
@@ -1031,7 +1111,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 369.333317756652832, 200.0, 100.0 ]
+					"patching_rect" : [ 672.35772317647934, 380.249985456466675, 199.186991751194, 99.999999940395355 ]
 				}
 
 			}
@@ -1055,7 +1135,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 668.674723505973816, 85.499996304512024, 50.0, 22.0 ]
+					"patching_rect" : [ 696.0, 84.801202058792114, 50.0, 22.0 ]
 				}
 
 			}
@@ -1067,7 +1147,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 642.16869843006134, 50.560235977172852, 69.0, 20.0 ],
+					"patching_rect" : [ 642.16869843006134, 52.0, 69.0, 20.0 ],
 					"size" : 2000.0
 				}
 
@@ -1090,7 +1170,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.987975716590881, 163.855427742004395, 68.64285671710968, 68.64285671710968 ]
+					"patching_rect" : [ 642.16869843006134, 166.0, 68.64285671710968, 68.64285671710968 ]
 				}
 
 			}
@@ -1247,6 +1327,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"order" : 0,
 					"source" : [ "obj-101", 0 ]
@@ -1326,6 +1413,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-110", 0 ]
 				}
@@ -1396,6 +1490,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"order" : 0,
 					"source" : [ "obj-120", 0 ]
@@ -1407,6 +1508,13 @@
 					"destination" : [ "obj-119", 0 ],
 					"order" : 1,
 					"source" : [ "obj-120", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -1439,6 +1547,38 @@
 					"destination" : [ "obj-67", 0 ],
 					"order" : 1,
 					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"midpoints" : [ 921.5, 132.0, 921.5, 132.0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"midpoints" : [ 921.5, 147.0, 909.0, 147.0, 909.0, 174.0, 921.5, 174.0 ],
+					"order" : 0,
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1613,7 +1753,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
-					"midpoints" : [ 611.5, 443.916667699813843, 588.0, 443.916667699813843, 588.0, 365.916667699813843, 681.5, 365.916667699813843 ],
+					"midpoints" : [ 611.5, 443.916667699813843, 588.0, 443.916667699813843, 588.0, 365.916667699813843, 681.85772317647934, 365.916667699813843 ],
 					"source" : [ "obj-62", 0 ]
 				}
 
